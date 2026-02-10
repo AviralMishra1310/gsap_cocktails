@@ -10,7 +10,7 @@ import Contact from "./components/Contact.jsx";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
-const App = () => {
+const AppTemp = () => {
   return (
     <main>
         <Navbar />
@@ -24,4 +24,4 @@ const App = () => {
   )
 }
 
-export default App
+export default AppTemp
