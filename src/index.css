@@ -378,9 +378,10 @@ body {
                 @apply uppercase xl:text-base 2xl:text-lg text-base mb-2;
             }
 
-            p {
-                @apply lg:text-2xl 2xl:text-3xl text-sm;
-            }
+           p {
+            @apply lg:text-base 2xl:text-lg text-sm opacity-90;
+           }
+
         }
 
         .drink-img {
