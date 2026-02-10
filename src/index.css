@@ -105,7 +105,7 @@ body {
 
         .body {
             @apply container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-20 top-auto md:top-[30vh] flex justify-between items-end px-5;
-
+        
             .content {
                 @apply flex lg:flex-row flex-col w-full gap-10 justify-between items-center lg:items-end mx-auto;
 
@@ -297,17 +297,31 @@ body {
             @apply flex flex-col justify-between items-center container mx-auto relative;
 
             .arrows {
-                @apply flex items-center justify-between w-full absolute;
-
-                button {
-                    @apply text-white hover:text-yellow cursor-pointer transition-colors max-w-36;
-
-                    span {
-                        @apply text-3xl font-modern-negra leading-none hidden md:block;
-                    }
-                }
+                @apply flex items-center justify-between w-full absolute inset-x-0 px-6;
             }
-        }
+
+            .arrows button {
+                @apply flex flex-col items-center gap-2
+                    text-white hover:text-yellow
+                    cursor-pointer transition-colors max-w-36;
+                }
+
+                .arrows button span {
+                    @apply text-3xl font-modern-negra leading-none hidden md:block;
+                }
+
+                .arrows button img {
+                    @apply w-8 h-auto;
+                }
+
+                .arrows button.text-left {
+                    @apply items-start;
+                }
+
+                .arrows button.text-right {
+                    @apply items-end;
+                }
+                }
 
         .cocktail {
             @apply flex-center mt-10;
